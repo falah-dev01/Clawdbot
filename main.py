@@ -4,9 +4,9 @@ import re
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
-API_KEY =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
-BOT_TOKEN =8535999808:AAFzPlXLUGdw9F-UP4C2xGD4gqmfamwj4PM
-WHOIS_API =qg3npLRBALiNjohfE5U0P1vXxyQ4WPM0ivv5u9At
+API_KEY ="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" 
+BOT_TOKEN ="8535999808:AAFzPlXLUGdw9F-UP4C2xGD4gqmfamwj4PM" 
+WHOIS_API ="qg3npLRBALiNjohfE5U0P1vXxyQ4WPM0ivv5u9At" 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("⚡ Clawdbot FINAL ONLINE\nUse /panel")
