@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: telegram-ai-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python bot.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false          # set this manually in Render dashboard
+      - key: OPENROUTER_API_KEY
+        sync: false          # set this manually in Render dashboard
+      - key: WEBHOOK_URL
+        sync: false          # e.g. https://telegram-ai-bot.onrender.com
+      - key: MODEL
+        value: anthropic/claude-3.5-haiku
+      - key: MAX_HISTORY
+        value: "20"
+      - key: SYSTEM_PROMPT
+        value: "You are a helpful, harmless, and honest AI assistant. Be concise, clear, and friendly. Use Markdown when it helps readability."
+      - key: PORT
+        value: "8443"
