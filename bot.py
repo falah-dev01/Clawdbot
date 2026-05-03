@@ -19,12 +19,12 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ── Config ─────────────────────────────────────────────────────────────────
-TELEGRAM_TOKEN   = os.environ["TELEGRAM_TOKEN"]
-OPENROUTER_KEY   = os.environ["OPENROUTER_API_KEY"]
+TELEGRAM_TOKEN   = os.environ["T8752843871:AAFHO4nstZGWwKUPLPc5nhAmNeiZxKEE138"]
+OPENROUTER_KEY   = os.environ["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"]
 MODEL            = os.environ.get("MODEL", "anthropic/claude-3.5-haiku")
-WEBHOOK_URL      = os.environ.get("WEBHOOK_URL", "")          # e.g. https://your-app.onrender.com
-PORT             = int(os.environ.get("PORT", 8443))
-MAX_HISTORY      = int(os.environ.get("MAX_HISTORY", 20))     # messages kept per user
+WEBHOOK_URL      = os.environ.get("https://clawdbot-5w1n.onrender.com", "")          # e.g. https://your-app.onrender.com
+PORT             = int(os.environ.get("10000", 8443))
+MAX_HISTORY      = int(os.environ.get("30", 20))     # messages kept per user
 SYSTEM_PROMPT    = os.environ.get(
     "SYSTEM_PROMPT",
     "You are a helpful, harmless, and honest AI assistant. "
