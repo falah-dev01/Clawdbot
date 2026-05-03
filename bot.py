@@ -19,7 +19,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # ── Config ─────────────────────────────────────────────────────────────────
-TELEGRAM_TOKEN   = os.environ["T8752843871:AAFHO4nstZGWwKUPLPc5nhAmNeiZxKEE138"]
+TELEGRAM_TOKEN   = os.environ["8752843871:AAFHO4nstZGWwKUPLPc5nhAmNeiZxKEE138"]
 OPENROUTER_KEY   = os.environ["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"]
 MODEL            = os.environ.get("MODEL", "anthropic/claude-3.5-haiku")
 WEBHOOK_URL      = os.environ.get("https://clawdbot-5w1n.onrender.com", "")          # e.g. https://your-app.onrender.com
